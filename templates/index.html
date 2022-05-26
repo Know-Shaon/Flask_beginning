@@ -1,0 +1,23 @@
+{% include 'base.html' %}
+{% block body %}
+<div class="m-5">
+    <h2> HTML FORMS </h2>
+
+    <form action = '/submit' method = 'post' class="m-10">
+        <label for = 'Science'>Science:</label><br>
+        <input type = 'text' id="science" name="science" value="0"> <br><br>
+        <label for = 'Maths'> Maths:</label><br>
+        <input type = 'text' id="maths" name="maths" value="0"> <br><br>
+        <label for = 'C'> C:</label><br>
+        <input type="text" id="c" name="c" value="0"> <br><br>
+        <label for="Data Science">Data Science:</label><br>
+        <input type="text" id="Data Science" name="datascience" value="0"><br><br>
+        <input type="submit" id="Submit" class="btn btn-primary mb-3"><br>
+    </form>
+
+<p> If you click on "Submit" button, the form data will be sent to the page called "/submit."<p>
+
+</div>
+    
+
+{% endblock %}

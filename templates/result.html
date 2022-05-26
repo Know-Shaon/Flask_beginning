@@ -1,0 +1,18 @@
+{% include 'base.html' %}
+{% block body %}
+
+{# Trying jinja2 template engine #}
+<h1> Final Results </h1>
+ 
+<table class="table">
+{% for key, value in result.items() %}
+<tr> 
+    <th> {{ key }} </th>
+    <th> {{ value }} </th>
+</tr>
+
+{% endfor %}
+</table>
+
+{% endblock %}
+
